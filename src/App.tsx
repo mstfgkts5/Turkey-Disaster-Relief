@@ -133,7 +133,7 @@ const translations = {
     contactKizilay: 'Türk Kızılay',
     contactKandilli: 'Kandilli Rasathanesi',
     contactTitle: 'İletişim & Kurumlar',
-    contact: 'Kriz Hattı',
+    contact: 'Destek Hattı',
     reportInstantLocation: 'ACİL DURUM',
     selectDisaster: 'Afet Türünü Seçin',
     earthquake: 'Deprem',
@@ -325,7 +325,7 @@ const translations = {
     contactKizilay: 'Turkish Red Crescent',
     contactKandilli: 'Kandilli Observatory',
     contactTitle: 'Contact & Institutions',
-    contact: 'Emergency Line',
+    contact: 'Support Line',
     reportInstantLocation: 'EMERGENCY',
     selectDisaster: 'Select Disaster Type',
     earthquake: 'Earthquake',
@@ -503,6 +503,198 @@ const translations = {
         ]
       }
     }
+  },
+  ar: {
+    appName: 'تركيا يداً بيد في الكوارث',
+    shareLocation: 'مشاركة الموقع',
+    locationRequesting: 'جاري تحديد الموقع...',
+    locationSuccess: 'تمت مشاركة الموقع',
+    locationError: 'حدث خطأ',
+    openModule: 'فتح الوحدة',
+    back: 'رجوع',
+    officialChannel: 'قناة الإعلانات الرسمية',
+    contactAfad: 'آفاد (AFAD)',
+    contactKizilay: 'الهلال الأحمر التركي',
+    contactKandilli: 'مرصد كانديلي',
+    contactTitle: 'الجهات والاتصال',
+    contact: 'خط الدعم',
+    reportInstantLocation: 'حالة طوارئ',
+    selectDisaster: 'اختر نوع الكارثة',
+    earthquake: 'زلزال',
+    flood: 'فيضان',
+    fire: 'حريق غابة',
+    sirenPlaying: 'صفارة الإنذار تعمل',
+    sirenStopped: 'توقفت صفارة الإنذار',
+    modules: {
+      emergency: {
+        title: 'حالة الكارثة والتتبع المباشر',
+        subtitle: 'تنسيق لحظة الكارثة',
+        liveTrack: 'تتبع مباشر',
+        lastMinute: 'إعلانات اللحظة الأخيرة',
+        gatheringAreas: 'مناطق التجمع',
+        searchPlaceholder: 'ابحث عن منطقة...',
+        nearestZone: 'أقرب منطقة آمنة تبعد 400 متر.',
+        news1: 'كانديلي: تسجيل هزة بقوة 4.2 في بحر إيجة.',
+        news2: 'آفاد: تذكر "انزل-تغط-تمسك" أثناء الزلزال.',
+      },
+      preparation: {
+        title: 'الاستعداد والتعليم',
+        subtitle: 'الوعي قبل الكارثة',
+        sections: [
+          { id: 'kit', title: 'حقيبة الكوارث', desc: 'قائمة مستلزمات الطوارئ' },
+          { id: 'firstaid', title: 'أساسيات الإسعافات الأولية', desc: 'تدخلات منقذة للحياة' },
+          { id: 'during_disaster', title: 'ماذا تفعل أثناء الكارثة', desc: 'خطوات الاستجابة الفورية' },
+          { id: 'building', title: 'مقاومة المباني', desc: 'خطوات فحص سلامة الهيكل' },
+          { id: 'fire', title: 'الاستجابة الأولى للحريق', desc: 'الإطفاء والإخلاء' }
+        ],
+        fireMenu: [
+          { id: 'classes', title: 'فئات الحرائق', icon: 'Flame' },
+          { id: 'checklist', title: 'قائمة المعدات المنزلية', icon: 'ListChecks' }
+        ],
+        fireDetails: {
+          classes: [
+            { type: 'A (صلبة)', items: 'خشب، ورق، قماش', tools: 'ماء، مسحوق جاف (KKT)', forbidden: '' },
+            { type: 'B (سائلة)', items: 'بنزين، زيت، كحول', tools: 'رغوة، ثاني أكسيد الكربون، KKT', forbidden: 'لا تستخدم الماء أبداً!' },
+            { type: 'C (غازية)', items: 'غاز مسال، غاز طبيعي', tools: 'KKT، ثاني أكسيد الكربون', forbidden: '' },
+            { type: 'E (كهربائية)', items: 'محولات، أجهزة منزلية', tools: 'ثاني أكسيد الكربون، KKT', forbidden: 'لا تستخدم الماء أبداً!' },
+            { type: 'F (مطبخ)', items: 'زيوت الطبخ', tools: 'بطانية حريق، مواد كيميائية خاصة', forbidden: 'لا تستخدم الماء أبداً!' }
+          ],
+          passSteps: [
+            { key: 'P (اسحب)', title: 'اسحب', desc: 'اسحب مسمار الأمان.' },
+            { key: 'A (وجه)', title: 'وجه', desc: 'وجه نحو قاعدة النار.' },
+            { key: 'S (اضغط)', title: 'اضغط', desc: 'اضغط على المقبض بالكامل.' },
+            { key: 'S (امسح)', title: 'امسح', desc: 'امسح من جانب إلى آخر فوق ألسنة اللهب.' }
+          ],
+          smokeGuide: [
+            { title: 'قاعدة "منخفض وازحف"', desc: 'الهواء النظيف بالقرب من الأرض. تقدم على الأرض.' },
+            { title: 'التحكم في الباب', desc: 'افحص درجة الحرارة بظهر يدك قبل الفتح.' }
+          ],
+          equipmentCheck: [
+            'طفاية حريق مسحوق جاف 6 كجم (محدثة)',
+            'بطانية حريق في المطبخ',
+            'كاشف دخان في الردهة',
+            'كاشف تسرب الغاز'
+          ]
+        },
+        buildingMenu: [
+          { id: 'assessment', title: 'اختبار التقييم الذاتي التفاعلي', icon: 'ClipboardCheck' },
+          { id: 'soil', title: 'معلومات التربة حسب العنوان', icon: 'MapPin' },
+          { id: 'report', title: 'الإبلاغ عن انتهاك هيكلي', icon: 'AlertTriangle' },
+          { id: 'roadmap', title: 'خارطة طريق "ما بعد الاستعلام"', icon: 'Map' }
+        ],
+        buildingDetails: {
+          assessment: {
+            questions: [
+              { id: 1, text: 'هل توجد متاجر في الطابق الأرضي وهل تم إزالة أي جدران؟', type: 'boolean' },
+              { id: 2, text: 'هل ترى تآكلاً في الأعمدة أو تقشراً للخرسانة في القبو؟', type: 'boolean' },
+              { id: 3, text: 'هل توجد شقوق على شكل "X" في العوارض؟', type: 'boolean' },
+              { id: 4, text: 'هل تم بناء المبنى الخاص بك قبل عام 1999؟', type: 'boolean' }
+            ],
+            resultWarning: 'يظهر المبنى الخاص بك عوامل خطر ملحوظة. هذا الاختبار ليس تحليلاً هندسياً رسمياً. نوصي بالفحص الاحترافي.'
+          },
+          soil: {
+            fayDist: 'المسافة إلى أقرب خط صدع نشط: ~3.4 كم',
+            soilType: 'هيكل التربة: طمي / صلب متوسط (Z3)',
+            regulations: [
+              { year: 'قبل 1999', desc: 'كانت لوائح 1975 و 1998 سارية. كانت المعايير أقل بكثير من اليوم.' },
+              { year: '1999-2018', desc: 'زادت لائحة 2007 المنقحة بعد الزلزال من عمليات التفتيش.' },
+              { year: 'بعد 2018', desc: 'يخضع لأحدث وأكثر المعايير صرامة من لائحة زلازل المباني في تركيا.' }
+            ]
+          },
+          report: {
+            title: 'الإبلاغ عن انتهاك هيكلي',
+            desc: 'أبلغ عن قطع الأعمدة المشتبه به أو التجديدات غير القانونية في متاجر الطابق الأرضي.',
+            links: [
+              { name: 'بوابة الحكومة الإلكترونية', icon: 'Globe' }
+            ]
+          },
+          roadmap: {
+            steps: [
+              { title: 'تطبيق رسمي', desc: 'تقدم بطلب إلى "المسح السريع للمباني" التابع للبلدية أو المؤسسات المعتمدة من الوزارة.' },
+              { title: 'ما هو اختبار اللب؟', desc: 'عملية أخذ عينات لقياس جودة الخرسانة. يجب أن يتم من قبل خبراء.' },
+              { title: 'الحقوق القانونية', desc: 'تتوفر مساعدة الإيجار للتحول الحضري وقروض التعزيز المدعومة من الدولة.' }
+            ]
+          },
+          emergency_local: {
+            gatheringArea: 'أقرب منطقة تجمع: حديقة الجمهورية (150م)',
+            daskInfo: 'لا تنس الاستعلام عن حالة بوليصة DASK الخاصة بك. أنت مغطى في حالة وقوع كارثة.'
+          }
+        },
+        kitChecklist: [
+          '💧 ماء (4 لتر للشخص في اليوم)',
+          '🥫 طعام غير قابل للتلف (معلبات، بسكويت إلخ)',
+          '🩹 حقيبة إسعافات أولية',
+          '📻 راديو يعمل بالبطارية وبطاريات إضافية',
+          '🔦 مصباح يدوي وبطاريات إضافية',
+          '📢 صفارة',
+          '🔪 سكين متعدد الاستخدامات، مقص، شريط لاصق',
+          '🧼 مجموعة نظافة (صابون، كمامات، معقم)',
+          '📄 نسخ من المستندات المهمة',
+          '🔑 مفاتيح احتياطية',
+          '🧣 بطانيات وملابس إضافية',
+          '💊 الأدوية المعتادة'
+        ],
+        videoTitle: 'مقاطع فيديو تعليمية',
+        videoDesc: 'البروتوكولات الأساسية.',
+        simulationTitle: 'محاكاة الذعر',
+        simulationDesc: 'اختبار وعي بالكوارث من 15 سؤالاً',
+        generalSimulation: [
+          { scenario: 'ماذا يجب أن نفعل في الداخل أثناء الزلزال؟', options: [{ text: 'الركض للخارج', correct: false }, { text: 'انزل، تغط، وتمسك', correct: true }, { text: 'استخدام المصعد', correct: false }] },
+          { scenario: 'ما الذي يجب ألا تفعله إذا اندلع حريق دهون في المطبخ؟', options: [{ text: 'صب الماء عليه', correct: true }, { text: 'إيقاف تشغيل الموقد', correct: false }, { text: 'تغطيته ببطانية حريق', correct: false }] },
+          { scenario: 'كيف تخرج من غرفة مليئة بالدخان؟', options: [{ text: 'الركض', correct: false }, { text: 'القفز', correct: false }, { text: 'الزحف', correct: true }] },
+          { scenario: 'ما هي الخطوة الأولى عند التحذير من الفيضانات؟', options: [{ text: 'الذهاب إلى القبو', correct: false }, { text: 'الانتقال إلى أرض مرتفعة', correct: true }, { text: 'القيادة بعيداً', correct: false }] },
+          { scenario: 'ماذا تفعل إذا حوصرت في السرير أثناء زلزال؟', options: [{ text: 'حماية الرأس بوسادة والتكور', correct: true }, { text: 'القفز من النافذة', correct: false }, { text: 'الركض إلى الدرج', correct: false }] },
+          { scenario: 'الخطوة الأولى عند استخدام طفاية حريق؟', options: [{ text: 'توجيه الخرطوم', correct: false }, { text: 'سحب الدبوس', correct: true }, { text: 'الضغط على المقبض', correct: false }] },
+          { scenario: 'ما الذي لا تحتاجه في حقيبة الكوارث؟', options: [{ text: 'مصباح يدوي', correct: false }, { text: 'طبق خزفي', correct: true }, { text: 'صفارة', correct: false }] },
+          { scenario: 'هل من الآمن دخول مياه الفيضانات؟', options: [{ text: 'نعم، إذا كانت ضحلة', correct: false }, { text: 'لا، بسبب التيارات والأمراض', correct: true }, { text: 'فقط للسباحين', correct: false }] },
+          { scenario: 'كيف تعالج حرقاً طفيفاً في الإسعافات الأولية؟', options: [{ text: 'وضع معجون أسنان', correct: false }, { text: 'ماء جار بارد لمدة 10-15 دقيقة', correct: true }, { text: 'وضع الثلج', correct: false }] },
+          { scenario: 'أين تذهب إذا كنت في الخارج أثناء زلزال؟', options: [{ text: 'منطقة مفتوحة بعيداً عن المباني', correct: true }, { text: 'تحت الأشجار', correct: false }, { text: 'بجوار المباني', correct: false }] },
+          { scenario: 'كيف تتواصل بعد الكارثة؟', options: [{ text: 'مكالمات هاتفية طويلة', correct: false }, { text: 'رسائل نصية قصيرة أو تطبيقات إنترنت', correct: true }, { text: 'الاتصال بالشرطة مراراً', correct: false }] },
+          { scenario: 'إذا شعرت أن الباب ساخن أثناء الحريق، ماذا تفعل؟', options: [{ text: 'فتحه على الفور', correct: false }, { text: 'لا تفتحه، سد الأسفل', correct: true }, { text: 'ركل الباب لفتحه', correct: false }] },
+          { scenario: 'كيف توقف النزيف في الإسعافات الأولية؟', options: [{ text: 'صب ماء ساخن', correct: false }, { text: 'الضغط المباشر بقطعة قماش نظيفة', correct: true }, { text: 'تركه مفتوحاً', correct: false }] },
+          { scenario: 'هل يمكنك شرب ماء الصنبور مباشرة بعد الفيضان؟', options: [{ text: 'لا، قد يكون ملوثاً', correct: true }, { text: 'نعم، إذا كان يتدفق', correct: false }, { text: 'فقط بدون غليان', correct: false }] },
+          { scenario: 'ماذا تفعل إذا اشتبهت في تسرب أول أكسيد الكربون؟', options: [{ text: 'النوم والراحة', correct: false }, { text: 'إغلاق النوافذ', correct: false }, { text: 'فتح النوافذ والإخلاء', correct: true }] }
+        ]
+      },
+      logistics: {
+        title: 'الاحتياجات والخدمات اللوجستية',
+        subtitle: 'تتبع المخزون وطرق النقل',
+        statVehicles: 'المركبات النشطة',
+        createRoute: 'إنشاء مسار',
+      },
+      support: {
+        title: 'الدعم والتطوع',
+        subtitle: 'قوة المجتمع المستمرة',
+        volunteerTitle: 'كن متطوعاً',
+        volunteerDesc: 'انضم إلى فرقنا وقف بجانبنا في جهود ما بعد الكارثة.',
+        formName: 'الاسم الكامل',
+        formExpertise: 'مجال الخبرة',
+        expertiseOptions: ['إسعافات أولية', 'خدمات لوجستية', 'بحث وإنقاذ', 'دعم نفسي واجتماعي'],
+        volunteerTags: {
+          health: 'صحة',
+          tech: 'تقني/ميداني',
+          logistics: 'لوجستي/لغة',
+        },
+        fieldOptions: {
+          field: 'متطوع ميداني',
+        },
+        tasksTitle: 'لوحة المتطوعين',
+        tasksSubtitle: 'سوق المهام الفوري',
+        donationTitle: 'قنوات التبرع الموثوقة',
+        donationSubtitle: 'جسر المؤسسة الرسمية',
+        submit: 'إرسال الطلب'
+      },
+      faq: {
+        title: 'أسئلة وأجوبة ومعلومات',
+        subtitle: 'معلومات منقذة للحياة',
+        qa: [
+          { q: 'ماذا يجب أن أفعل أولاً أثناء الزلزال؟', a: 'قم بتطبيق طريقة انزل-تغط-تمسك. ابق بعيداً عن النوافذ والسلالم والمصاعد.' },
+          { q: 'ماذا يجب أن أضع في حقيبة الطوارئ؟', a: 'ماء، صفارة، مصباح يدوي، حقيبة إسعافات أولية، بطاريات احتياطية، بطانية، وطعام جاف لمدة 3 أيام.' },
+          { q: 'ماذا يجب أن أفعل عندما أتلقى تحذيراً من فيضان؟', a: 'أوقف تشغيل الكهرباء والغاز، وانتقل إلى أرض مرتفعة على الفور. لا تحاول قيادة سيارتك.' },
+          { q: 'ماذا لو كانت الأبواب ساخنة أثناء الحريق؟', a: 'لا تفتح الباب. سد الدخان بقطع قماش مبللة تحت الباب واطلب المساعدة من النافذة.' }
+        ]
+      }
+    }
   }
 };
 
@@ -550,7 +742,7 @@ interface CollectionCenter {
   types?: string[];
 }
 
-type Category = 'food' | 'shelter' | 'medical' | 'children' | 'hygiene';
+type Category = 'food' | 'shelter' | 'medical' | 'children' | 'hygiene' | 'blood';
 
 interface VolunteerTask {
   id: string;
@@ -582,6 +774,8 @@ const NEEDS_DATA: NeedItem[] = [
   { id: '4', title: 'Battaniye', category: 'shelter', city: 'Gaziantep', district: 'Nurdağı', collected: 800, total: 1000, urgency: 'MEDIUM' },
   { id: '5', title: 'Kuru Gıda Paketi', category: 'food', city: 'Malatya', district: 'Yeşilyurt', collected: 300, total: 1000, urgency: 'CRITICAL' },
   { id: '6', title: 'İlk Yardım Kiti', category: 'medical', city: 'Osmaniye', district: 'Merkez', collected: 150, total: 300, urgency: 'MEDIUM' },
+  { id: '7', title: '0 Rh- Kan İhtiyacı', category: 'blood', city: 'Hatay', district: 'Defne Devlet Hst.', collected: 10, total: 50, urgency: 'CRITICAL' },
+  { id: '8', title: 'A Rh+ Kan İhtiyacı', category: 'blood', city: 'Kahramanmaraş', district: 'Şehir Hst.', collected: 25, total: 100, urgency: 'CRITICAL' },
 ];
 
 const LOGISTICS_DATA: LogisticsPost[] = [
@@ -686,7 +880,7 @@ interface ModuleConfig {
   icon: any;
   color: string;
   borderColor: string;
-  metric: { tr: string, en: string };
+  metric: { tr: string, en: string, ar: string };
 }
 
 // --- Components ---
@@ -697,45 +891,46 @@ const modules: ModuleConfig[] = [
     icon: Activity,
     color: 'bg-[#C62828]',
     borderColor: 'border-[#B71C1C]',
-    metric: { tr: 'CANLI: 14 AKTİF BÖLGE', en: 'LIVE: 14 ACTIVE ZONES' }
+    metric: { tr: 'CANLI: 14 AKTİF BÖLGE', en: 'LIVE: 14 ACTIVE ZONES', ar: 'مباشر: 14 منطقة نشطة' }
   },
   {
     id: ModuleType.PREPARATION,
     icon: ShieldCheck,
     color: 'bg-[#1A237E]',
     borderColor: 'border-[#0D47A1]',
-    metric: { tr: 'GÜNCEL: %100 HAZIRLIK', en: 'CURRENT: %100 PREP' }
+    metric: { tr: 'GÜNCEL: %100 HAZIRLIK', en: 'CURRENT: %100 PREP', ar: 'الحالي: %100 استعداد' }
   },
   {
     id: ModuleType.LOGISTICS,
     icon: Truck,
     color: 'bg-[#E65100]',
     borderColor: 'border-[#BF360C]',
-    metric: { tr: 'GÜNCEL: %92 DAĞITIM', en: 'CURRENT: %92 DIST.' }
+    metric: { tr: 'GÜNCEL: %92 DAĞITIM', en: 'CURRENT: %92 DIST.', ar: 'الحالي: %92 توزيع' }
   },
   {
     id: ModuleType.SUPPORT,
     icon: Users,
     color: 'bg-[#00695C]',
     borderColor: 'border-[#004D40]',
-    metric: { tr: 'AKTİF: 2,450 GÖNÜLLÜ', en: 'ACTIVE: 2,450 VOL.' }
+    metric: { tr: 'AKTİF: 2,450 GÖNÜLLÜ', en: 'ACTIVE: 2,450 VOL.', ar: 'نشط: 2,450 متطوع' }
   },
   {
     id: ModuleType.FAQ,
     icon: HelpCircle,
     color: 'bg-[#4527A0]',
     borderColor: 'border-[#311B92]',
-    metric: { tr: 'BİLGİ BANKASI', en: 'KNOWLEDGE BASE' }
+    metric: { tr: 'BİLGİ BANKASI', en: 'KNOWLEDGE BASE', ar: 'قاعدة المعرفة' }
   }
 ];
 
 export default function App() {
   const [activeModule, setActiveModule] = useState<ModuleType | null>(null);
   const [locationStatus, setLocationStatus] = useState<'idle' | 'requesting' | 'success' | 'error'>('idle');
-  const [lang, setLang] = useState<'tr' | 'en'>('tr');
+  const [lang, setLang] = useState<'tr' | 'en' | 'ar'>('tr');
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isSirenPlaying, setIsSirenPlaying] = useState(false);
   const [isEmergencyMenuOpen, setIsEmergencyMenuOpen] = useState(false);
+  const [isHelpRequestModalOpen, setIsHelpRequestModalOpen] = useState(false);
   const sirenRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -804,7 +999,6 @@ export default function App() {
               className="w-16 h-16 object-contain brightness-90 contrast-125"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-red-600 border-2 border-white rounded-full animate-pulse" />
           </div>
           <div className="flex flex-col">
             <h1 className="font-black text-sm tracking-widest text-[#1a237e]">{t.appName}</h1>
@@ -912,13 +1106,15 @@ export default function App() {
 
           {/* Language Toggle */}
           <button
-            onClick={() => setLang(lang === 'tr' ? 'en' : 'tr')}
+            onClick={() => setLang(lang === 'tr' ? 'en' : lang === 'en' ? 'ar' : 'tr')}
             className="flex items-center gap-2 px-3 py-2 rounded-xl bg-gray-100 text-gray-700 font-bold text-xs hover:bg-gray-200 transition-all border border-gray-200"
           >
             <Globe size={16} />
             <span className={lang === 'tr' ? 'text-blue-600' : ''}>TR</span>
             <span className="text-gray-300">/</span>
             <span className={lang === 'en' ? 'text-blue-600' : ''}>ENG</span>
+            <span className="text-gray-300">/</span>
+            <span className={lang === 'ar' ? 'text-blue-600' : ''}>العربية</span>
           </button>
         </div>
       </header>
@@ -1050,6 +1246,17 @@ export default function App() {
                 exit={{ opacity: 0, y: 20, scale: 0.8 }}
                 className="flex flex-col gap-3 mb-2"
               >
+                {/* Help Request Button */}
+                <button
+                  onClick={() => {
+                    setIsEmergencyMenuOpen(false);
+                    setIsHelpRequestModalOpen(true);
+                  }}
+                  className={`flex items-center gap-3 px-5 py-3 rounded-full shadow-xl transition-all active:scale-95 text-white font-black text-[10px] tracking-widest uppercase border-2 border-white/20 bg-blue-600 hover:bg-blue-700`}
+                >
+                  <HandHeart size={18} />
+                  {lang === 'tr' ? 'Yardım Talebi Oluştur' : 'Create Help Request'}
+                </button>
                 {/* Siren Button */}
                 <button
                   onClick={toggleSiren}
@@ -1103,13 +1310,84 @@ export default function App() {
       {!activeModule && (
         <div className="h-12" /> // Spacing for fab
       )}
+      <AnimatePresence>
+        {isHelpRequestModalOpen && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsHelpRequestModalOpen(false)}
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100]"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg bg-white rounded-[40px] shadow-2xl z-[101] overflow-hidden border border-gray-100 p-6 sm:p-8"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                    <HandHeart size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">Yardım Talebi</h3>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">İhtiyacınızı Bize Bildirin</p>
+                  </div>
+                </div>
+                <button 
+                  onClick={() => setIsHelpRequestModalOpen(false)}
+                  className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-gray-100 transition-colors"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+
+              <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Yardım talebiniz başarıyla alındı ve sisteme işlendi. Ekipler en kısa sürede sizinle iletişime geçecektir.'); setIsHelpRequestModalOpen(false); }}>
+                <div className="space-y-4">
+                  <label className="text-xs font-black text-gray-400 uppercase tracking-widest block">İhtiyaç Türü</label>
+                  <div className="grid grid-cols-2 gap-3">
+                    {['Arama Kurtarma', 'Gıda & Su', 'Barınma / Çadır', 'Tıbbi Destek'].map((type) => (
+                      <label key={type} className="flex items-center gap-3 p-3 rounded-2xl border border-gray-100 bg-gray-50 cursor-pointer hover:border-blue-500 transition-all has-[:checked]:bg-blue-50 has-[:checked]:border-blue-500 has-[:checked]:text-blue-700">
+                        <input type="radio" name="needType" required className="accent-blue-600" />
+                        <span className="text-xs font-bold">{type}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Kişi Sayısı</label>
+                    <input type="number" min="1" required placeholder="Örn: 4" className="w-full p-4 rounded-2xl border border-gray-100 bg-gray-50 font-bold text-sm outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">İletişim (Tel)</label>
+                    <input type="tel" required placeholder="05XX XXX XX XX" className="w-full p-4 rounded-2xl border border-gray-100 bg-gray-50 font-bold text-sm outline-none focus:ring-2 focus:ring-blue-500" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Tam Adres / Konum Detayı</label>
+                  <textarea required rows={3} placeholder="Mahalle, sokak, bina no, kat bilgisi..." className="w-full p-4 rounded-2xl border border-gray-100 bg-gray-50 font-bold text-sm outline-none focus:ring-2 focus:ring-blue-500 resize-none" />
+                </div>
+
+                <button type="submit" className="w-full py-5 bg-blue-600 text-white font-black rounded-2xl shadow-xl shadow-blue-600/20 hover:scale-[1.01] active:scale-95 transition-all text-sm uppercase">
+                  Talebi Gönder
+                </button>
+              </form>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
 
 // --- Detail View Component ---
 
-function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => void, lang: 'tr' | 'en' }) {
+function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => void, lang: 'tr' | 'en' | 'ar' }) {
   const t = translations[lang];
   const tm = t.modules[type];
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -1172,6 +1450,7 @@ function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => vo
               <EmergencyMap lang={lang} disasterType={selectedDisaster} />
             </div>
 
+
             <div className="p-5 rounded-2xl bg-white border border-gray-100 shadow-sm">
               <h4 className="font-bold mb-3 flex items-center gap-2">
                 <ShieldCheck size={18} className="text-red-500" /> {e.lastMinute}
@@ -1190,6 +1469,28 @@ function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => vo
                 </li>
               </ul>
             </div>
+
+            {selectedDisaster === 'earthquake' && (
+              <a
+                href="http://www.koeri.boun.edu.tr/sismo/2/son-depremler/harita-uzerinde/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between px-5 py-4 rounded-2xl bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors group shadow-sm border border-blue-100"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-200 text-blue-700 flex items-center justify-center">
+                    <MapIcon size={20} />
+                  </div>
+                  <div>
+                    <div className="font-black">Kandilli Rasathanesi Canlı Deprem Haritası</div>
+                    <div className="text-[10px] font-bold uppercase tracking-widest opacity-70">
+                      {lang === 'tr' ? 'Harita Üzerinde İncele' : 'View on Map'}
+                    </div>
+                  </div>
+                </div>
+                <ExternalLink size={20} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+              </a>
+            )}
           </div>
         );
       case ModuleType.PREPARATION:
@@ -1536,7 +1837,6 @@ function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => vo
                   </div>
                   <div className="flex items-center justify-between w-full">
                     <h4 className="font-bold text-lg mb-1">{section.title}</h4>
-                    {(section.id === 'kit' || section.id === 'firstaid' || section.id === 'during_disaster' || section.id === 'building' || section.id === 'fire') && <div className="text-[10px] font-black bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full uppercase">İnteraktif</div>}
                   </div>
                   <p className="text-sm text-gray-500">{section.desc}</p>
                 </button>
@@ -1662,7 +1962,7 @@ function MapCenter({ center }: { center: [number, number] }) {
   return null;
 }
 
-function EmergencyMap({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: string | null }) {
+function EmergencyMap({ lang, disasterType }: { lang: 'tr' | 'en' | 'ar', disasterType?: string | null }) {
   const [userPos, setUserPos] = useState<[number, number] | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [viewPos, setViewPos] = useState<[number, number] | null>(null);
@@ -1865,7 +2165,7 @@ interface LocationCardProps {
   key?: any;
 }
 
-function VolunteerDashboard({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: string | null }) {
+function VolunteerDashboard({ lang, disasterType }: { lang: 'tr' | 'en' | 'ar', disasterType?: string | null }) {
   const t = translations[lang].modules.support;
   const [activeTab, setActiveTab] = useState<'form' | 'tasks' | 'donate'>('form');
 
@@ -1909,7 +2209,7 @@ function VolunteerDashboard({ lang, disasterType }: { lang: 'tr' | 'en', disaste
   );
 }
 
-function VolunteerForm({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: string | null }) {
+function VolunteerForm({ lang, disasterType }: { lang: 'tr' | 'en' | 'ar', disasterType?: string | null }) {
   const t = translations[lang].modules.support;
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [volunteerType, setVolunteerType] = useState<'field' | 'remote' | null>(null);
@@ -1987,7 +2287,7 @@ function VolunteerForm({ lang, disasterType }: { lang: 'tr' | 'en', disasterType
   );
 }
 
-function TaskBoard({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: string | null }) {
+function TaskBoard({ lang, disasterType }: { lang: 'tr' | 'en' | 'ar', disasterType?: string | null }) {
   const t = translations[lang].modules.support;
 
   return (
@@ -2039,7 +2339,7 @@ function TaskBoard({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: s
   );
 }
 
-function DonationBridge({ lang, disasterType }: { lang: 'tr' | 'en', disasterType?: string | null }) {
+function DonationBridge({ lang, disasterType }: { lang: 'tr' | 'en' | 'ar', disasterType?: string | null }) {
   const t = translations[lang].modules.support;
 
   return (
@@ -2149,7 +2449,7 @@ function CenterCard({ center, lang, onShow }: CenterCardProps) {
   );
 }
 
-function NeedsDashboard({ lang }: { lang: 'tr' | 'en' }) {
+function NeedsDashboard({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
   const [category, setCategory] = useState<Category | 'all'>('all');
 
   const filteredNeeds = NEEDS_DATA.filter(n =>
@@ -2160,14 +2460,15 @@ function NeedsDashboard({ lang }: { lang: 'tr' | 'en' }) {
     <div className="space-y-6">
       {/* Category Filters */}
       <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
-        {['all', 'food', 'shelter', 'medical', 'children', 'hygiene'].map((cat) => {
+        {['all', 'blood', 'food', 'shelter', 'medical', 'children', 'hygiene'].map((cat) => {
           const labels: any = {
-            all: lang === 'tr' ? 'Hepsi' : 'All',
-            food: lang === 'tr' ? 'Gıda' : 'Food',
-            shelter: lang === 'tr' ? 'Barınma' : 'Shelter',
-            medical: lang === 'tr' ? 'Medikal' : 'Medical',
-            children: lang === 'tr' ? 'Çocuk' : 'Children',
-            hygiene: lang === 'tr' ? 'Hijyen' : 'Hygiene'
+            all: lang === 'tr' ? 'Hepsi' : lang === 'ar' ? 'الكل' : 'All',
+            blood: lang === 'tr' ? 'Kan' : lang === 'ar' ? 'الدم' : 'Blood',
+            food: lang === 'tr' ? 'Gıda' : lang === 'ar' ? 'طعام' : 'Food',
+            shelter: lang === 'tr' ? 'Barınma' : lang === 'ar' ? 'مأوى' : 'Shelter',
+            medical: lang === 'tr' ? 'Medikal' : lang === 'ar' ? 'طبي' : 'Medical',
+            children: lang === 'tr' ? 'Çocuk' : lang === 'ar' ? 'أطفال' : 'Children',
+            hygiene: lang === 'tr' ? 'Hijyen' : lang === 'ar' ? 'نظافة' : 'Hygiene'
           };
           return (
             <button
@@ -2194,12 +2495,7 @@ function NeedsDashboard({ lang }: { lang: 'tr' | 'en' }) {
               className="p-6 bg-white border border-gray-100 rounded-[32px] shadow-sm flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest
-                    ${need.urgency === 'CRITICAL' ? 'bg-red-100 text-red-600' :
-                      need.urgency === 'MEDIUM' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
-                    {need.urgency}
-                  </span>
+                <div className="flex items-center justify-end mb-4">
                   <div className="text-[10px] font-black text-gray-400 bg-gray-50 px-2 py-0.5 rounded-lg uppercase">
                     {need.city} / {need.district}
                   </div>
@@ -2207,17 +2503,24 @@ function NeedsDashboard({ lang }: { lang: 'tr' | 'en' }) {
                 <h4 className="text-lg font-black text-gray-900 mb-1">{need.title}</h4>
                 <p className="text-xs font-bold text-gray-400 mb-6 uppercase tracking-tighter">
                   {lang === 'tr' ? (
+                    need.category === 'blood' ? 'Kan' :
                     need.category === 'food' ? 'Gıda' :
                       need.category === 'shelter' ? 'Barınma' :
                         need.category === 'medical' ? 'Medikal' :
                           need.category === 'children' ? 'Çocuk' : 'Hijyen'
+                  ) : lang === 'ar' ? (
+                    need.category === 'blood' ? 'الدم' :
+                    need.category === 'food' ? 'طعام' :
+                      need.category === 'shelter' ? 'مأوى' :
+                        need.category === 'medical' ? 'طبي' :
+                          need.category === 'children' ? 'أطفال' : 'نظافة'
                   ) : need.category}
                 </p>
 
                 <div className="space-y-3">
                   <div className="flex justify-between items-end">
                     <div className="text-xs font-black text-gray-900">
-                      {need.collected} / {need.total} <span className="text-gray-400 font-bold ml-1">ADET</span>
+                      {need.collected} / {need.total} <span className="text-gray-400 font-bold ml-1">{need.category === 'blood' ? (lang === 'tr' ? 'ÜNİTE' : lang === 'ar' ? 'وحدة' : 'UNIT') : (lang === 'tr' ? 'ADET' : lang === 'ar' ? 'قطعة' : 'UNITS')}</span>
                     </div>
                     <div className="text-lg font-black text-blue-600">%{progress}</div>
                   </div>
@@ -2249,7 +2552,7 @@ function NeedsDashboard({ lang }: { lang: 'tr' | 'en' }) {
   );
 }
 
-function LogisticsNetwork({ lang }: { lang: 'tr' | 'en' }) {
+function LogisticsNetwork({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
   return (
     <div className="space-y-8">
       {/* Provider Form Section */}
@@ -2342,16 +2645,12 @@ function LogisticsItem({ category, status, amount }: { category: string, status:
           <div className="text-xs text-gray-400">{amount}</div>
         </div>
       </div>
-      <div className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider
-        ${status === 'Kritik' || status === 'Critical' ? 'bg-red-100 text-red-600' :
-          status === 'Acil' || status === 'Urgent' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
-        {status}
-      </div>
+
     </div>
   );
 }
 
-function FireDetailView({ lang, onBack }: { lang: 'tr' | 'en', onBack: () => void }) {
+function FireDetailView({ lang, onBack }: { lang: 'tr' | 'en' | 'ar', onBack: () => void }) {
   const t = translations[lang];
   const p = t.modules.preparation;
   const [subSection, setSubSection] = useState<string | null>(null);
@@ -2504,7 +2803,7 @@ function FireDetailView({ lang, onBack }: { lang: 'tr' | 'en', onBack: () => voi
   );
 }
 
-function BuildingDetailView({ lang, onBack }: { lang: 'tr' | 'en', onBack: () => void }) {
+function BuildingDetailView({ lang, onBack }: { lang: 'tr' | 'en' | 'ar', onBack: () => void }) {
   const t = translations[lang];
   const p = t.modules.preparation;
   const [subSection, setSubSection] = useState<string | null>(null);
@@ -2692,7 +2991,7 @@ function BuildingDetailView({ lang, onBack }: { lang: 'tr' | 'en', onBack: () =>
   );
 }
 
-function FAQModule({ lang }: { lang: 'tr' | 'en' }) {
+function FAQModule({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
   const t = translations[lang];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -2740,4 +3039,5 @@ function FAQModule({ lang }: { lang: 'tr' | 'en' }) {
     </div>
   );
 }
+
 
