@@ -1,0 +1,6 @@
+{
+  "name": "Türkiye Afette El Ele",
+  "description": "Afet anı ve öncesinde koordinasyon, hazırlık ve yardımlaşma süreçlerini yöneten kapsamlı pano.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

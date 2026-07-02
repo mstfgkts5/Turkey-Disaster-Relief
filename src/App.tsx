@@ -141,6 +141,10 @@ const translations = {
     fire: 'Orman Yangını',
     sirenPlaying: 'Siren Çalıyor',
     sirenStopped: 'Siren Durduruldu',
+    aiPlaceholder: 'Yapay zeka asistanına afet ve ilk yardım hakkında sorun... (Örn: kanama durumunda ne yapmalıyım)',
+    aiTitle: '🤖 Yapay Zeka Destekli Afet Asistanı',
+    aiThinking: 'Düşünüyor ve veritabanını tarıyor...',
+    aiError: 'Yapay zeka motoruna bağlanılamadı. Lütfen Python (FastAPI) sunucunuzun çalıştığından emin olun.',
     modules: {
       emergency: {
         title: 'Afet Durumu & Canlı Takip',
@@ -206,7 +210,7 @@ const translations = {
               { id: 3, text: 'Kirişlerde "X" şeklinde çatlaklar var mı?', type: 'boolean' },
               { id: 4, text: 'Binanız 1999 yılından önce mi yapıldı?', type: 'boolean' }
             ],
-            resultWarning: 'Binanız gözlemsel olarak risk faktörleri barındırıyor. Bu test resmi bir mühendislik analizi yerine geçmez, profesyonel inceleme yaptırmanızı öneririz.'
+            resultWarning: 'Binanız gözlemsel olarak risk faktörleri barındırıyor. This test resmi bir mühendislik analizi yerine geçmez, profesyonel inceleme yaptırmanızı öneririz.'
           },
           soil: {
             fayDist: 'Binanızın bulunduğu konumun en yakın aktif fay hattına uzaklığı: ~3.4 km',
@@ -337,6 +341,10 @@ const translations = {
     fire: 'Wildfire',
     sirenPlaying: 'Siren Playing',
     sirenStopped: 'Siren Stopped',
+    aiPlaceholder: 'Ask AI assistant about disaster and first aid... (e.g., what to do in case of bleeding)',
+    aiTitle: '🤖 AI-Powered Disaster Assistant',
+    aiThinking: 'Thinking and scanning local knowledge base...',
+    aiError: 'Could not connect to AI engine. Make sure your Python server is running.',
     modules: {
       emergency: {
         title: 'Disaster Status & Live Track',
@@ -350,7 +358,7 @@ const translations = {
         news2: "AFAD: Remember 'Drop-Cover-Hold' during an earthquake.",
       },
       preparation: {
-        title: 'Prep & Education',
+        title: 'Nav & Prep',
         subtitle: 'Pre-Disaster Awareness',
         sections: [
           { id: 'kit', title: 'Disaster Kit', desc: 'Emergency supply list' },
@@ -533,6 +541,10 @@ const translations = {
     fire: 'حريق غابة',
     sirenPlaying: 'صفارة الإنذار تعمل',
     sirenStopped: 'توقفت صفارة الإنذار',
+    aiPlaceholder: 'اسأل مساعد الذكاء الاصطناعي حول الكوارث والإسعافات الأولية...',
+    aiTitle: '🤖 مساعد الطوارئ الذكي المحتلي',
+    aiThinking: 'يفكر الذكاء الاصطناعي الآن ويقوم بمسح قواعد البيانات المحلية...',
+    aiError: 'فشل الاتصال بمحرك الذكاء الاصطناعي المحلي. يرجى تشغيل خادم ووردبريس/بايثون.',
     modules: {
       emergency: {
         title: 'حالة الكارثة والتتبع المباشر',
@@ -550,7 +562,7 @@ const translations = {
         subtitle: 'الوعي قبل الكارثة',
         sections: [
           { id: 'kit', title: 'حقيبة الكوارث', desc: 'قائمة مستلزمات الطوارئ' },
-          { id: 'firstaid', title: 'أساسيات الإسعافات الأولية', desc: 'تدخلات منقذة للحياة' },
+          { id: 'firstaid', title: 'أسasيات الإسعافات الأولية', desc: 'تدخلات منقذة للحياة' },
           { id: 'during_disaster', title: 'ماذا تفعل أثناء الكارثة', desc: 'خطوات الاستجابة الفورية' },
           { id: 'building', title: 'مقاومة المباني', desc: 'خطوات فحص سلامة الهيكل' },
           { id: 'fire', title: 'الاستجابة الأولى للحريق', desc: 'الإطفاء والإخلاء' }
@@ -580,7 +592,7 @@ const translations = {
           equipmentCheck: [
             'طفاية حريق مسحوق جاف 6 كجم (محدثة)',
             'بطانية حريق في المطبخ',
-            'كاشف دخان في الردهة',
+            'كاشf دخان في الردهة',
             'كاشف تسرب الغاز'
           ]
         },
@@ -653,14 +665,14 @@ const translations = {
           { scenario: 'ما هي الخطوة الأولى عند التحذير من الفيضانات؟', options: [{ text: 'الذهاب إلى القبو', correct: false }, { text: 'الانتقال إلى أرض مرتفعة', correct: true }, { text: 'القيادة بعيداً', correct: false }] },
           { scenario: 'ماذا تفعل إذا حوصرت في السرير أثناء زلزال؟', options: [{ text: 'حماية الرأس بوسادة والتكور', correct: true }, { text: 'القفز من النافذة', correct: false }, { text: 'الركض إلى الدرج', correct: false }] },
           { scenario: 'الخطوة الأولى عند استخدام طفاية حريق؟', options: [{ text: 'توجيه الخرطوم', correct: false }, { text: 'سحب الدبوس', correct: true }, { text: 'الضغط على المقبض', correct: false }] },
-          { scenario: 'ما الذي لا تحتاجه في حقيبة الكوارث؟', options: [{ text: 'مصباح يدوي', correct: false }, { text: 'طبق خزفي', correct: true }, { text: 'صفارة', correct: false }] },
+          { scenario: 'ما الذي لا تحتاجه في حقيبة الكوارث？', options: [{ text: 'مصباح يدوي', correct: false }, { text: 'طبق خزفي', correct: true }, { text: 'صفارة', correct: false }] },
           { scenario: 'هل من الآمن دخول مياه الفيضانات؟', options: [{ text: 'نعم، إذا كانت ضحلة', correct: false }, { text: 'لا، بسبب التيارات والأمراض', correct: true }, { text: 'فقط للسباحين', correct: false }] },
           { scenario: 'كيف تعالج حرقاً طفيفاً في الإسعافات الأولية؟', options: [{ text: 'وضع معجون أسنان', correct: false }, { text: 'ماء جار بارد لمدة 10-15 دقيقة', correct: true }, { text: 'وضع الثلج', correct: false }] },
           { scenario: 'أين تذهب إذا كنت في الخارج أثناء زلزال؟', options: [{ text: 'منطقة مفتوحة بعيداً عن المباني', correct: true }, { text: 'تحت الأشجار', correct: false }, { text: 'بجوار المباني', correct: false }] },
           { scenario: 'كيف تتواصل بعد الكارثة؟', options: [{ text: 'مكالمات هاتفية طويلة', correct: false }, { text: 'رسائل نصية قصيرة أو تطبيقات إنترنت', correct: true }, { text: 'الاتصال بالشرطة مراراً', correct: false }] },
           { scenario: 'إذا شعرت أن الباب ساخن أثناء الحريق، ماذا تفعل؟', options: [{ text: 'فتحه على الفور', correct: false }, { text: 'لا تفتحه، سد الأسفل', correct: true }, { text: 'ركل الباب لفتحه', correct: false }] },
           { scenario: 'كيف توقف النزيف في الإسعافات الأولية؟', options: [{ text: 'صب ماء ساخن', correct: false }, { text: 'الضغط المباشر بقطعة قماش نظيفة', correct: true }, { text: 'تركه مفتوحاً', correct: false }] },
-          { scenario: 'هل يمكنك شرب ماء الصنبور مباشرة بعد الفيضان؟', options: [{ text: 'لا، قد يكون ملوثاً', correct: true }, { text: 'نعم، إذا كان يتدفق', correct: false }, { text: 'فقط بدون غليان', correct: false }] },
+          { scenario: 'هل يمكنك شرب ماء الصنبور مباشرة بعد الفيضان؟', options: [{ text: 'No، قد يكون ملوثاً', correct: true }, { text: 'نعم، إذا كان يتدفق', correct: false }, { text: 'فقط بدون غليان', correct: false }] },
           { scenario: 'ماذا تفعل إذا اشتبهت في تسرب أول أكسيد الكربون؟', options: [{ text: 'النوم والراحة', correct: false }, { text: 'إغلاق النوافذ', correct: false }, { text: 'فتح النوافذ والإخلاء', correct: true }] }
         ]
       },
@@ -702,7 +714,7 @@ const translations = {
           { q: 'ماذا يجب أن أفعل عندما أتلقى تحذيراً من فيضان؟', a: 'أوقف تشغيل الكهرباء والغاز، وانتقل إلى أرض مرتفعة على الفور. لا تحاول قيادة سيارتك.' },
           { q: 'ماذا لو كانت الأبواب ساخنة أثناء الحريق؟', a: 'لا تفتح الباب. سد الدخان بقطع قماش مبللة تحت الباب واطلب المساعدة من النافذة.' },
           { q: 'كيف يمكنني معرفة منطقة التجمع الخاصة بي؟', a: 'يمكنك معرفة أقرب نقطة آمنة لك باستخدام خدمة "الاستعلام عن منطقة التجمع في حالات الكوارث والطوارئ" على بوابة الحكومة الإلكترونية أو من خريطة "مناطق التجمع" في تطبيقنا.' },
-          { q: 'ماذا أفعل إذا حوصرت تحت الأنقاض؟', a: 'حاول ألا تصاب بالذعر وحافظ على طاقتك. قم بتغطية فمك بقطعة قماش لتجنب ابتلاع الغبار. عندما تسمع صوتاً من الخارج، أعلن عن موقعك عن طريق ضرب الأنابيب أو إطلاق صفارة.' },
+          { q: 'ماذا أفعل إذا حوصرت تحت الأنقاض？', a: 'حاول ألا تصاب بالذعر وحافظ على طاقتك. قم بتغطية فمك بقطعة قماش لتجنب ابتلاع الغبار. عندما تسمع صوتاً من الخارج، أعلن عن موقعك عن طريق ضرب الأنابيب أو إطلاق صفارة.' },
           { q: 'ما هي المدة الزمنية للإبلاغ عن مطالبة DASK؟', a: 'يجب عليك إخطار DASK (عبر Alo 125 أو بوابة الحكومة الإلكترونية أو الموقع الإلكتروني) في غضون 15 يوم عمل كحد أقصى من تاريخ علمك بالضرر.' }
         ]
       }
@@ -943,6 +955,10 @@ export default function App() {
   const [isSirenPlaying, setIsSirenPlaying] = useState(false);
   const [isEmergencyMenuOpen, setIsEmergencyMenuOpen] = useState(false);
   const [isHelpRequestModalOpen, setIsHelpRequestModalOpen] = useState(false);
+  const [isAssistantOpen, setIsAssistantOpen] = useState(false);
+  const [aiQuestion, setAiQuestion] = useState('');
+  const [aiAnswer, setAiAnswer] = useState('');
+  const [aiLoading, setAiLoading] = useState(false);
   const sirenRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -956,7 +972,26 @@ export default function App() {
     };
   }, []);
 
-  const t = translations[lang];
+ const t = translations[lang];
+
+  const handleAiSearch = async () => {
+    if (!aiQuestion.trim()) return;
+    setAiLoading(true);
+    setAiAnswer('');
+    try {
+      const response = await fetch('http://127.0.0.1:8000/soru-sor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ soru: aiQuestion })
+      });
+      const data = await response.json();
+      setAiAnswer(data.cevap);
+    } catch (error) {
+      setAiAnswer(t.aiError || 'Yapay zeka sunucusuna bağlanılamadı.');
+    } finally {
+      setAiLoading(false);
+    }
+  };
 
   const shareLocation = () => {
     setLocationStatus('requesting');
@@ -1142,7 +1177,7 @@ export default function App() {
               className="space-y-6"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {modules.filter(m => m.id !== ModuleType.FAQ).map((m) => (
+                ={modules.filter(m => m.id !== ModuleType.FAQ).map((m) => (
                   <button
                     key={m.id}
                     onClick={() => setActiveModule(m.id)}
@@ -1318,7 +1353,95 @@ export default function App() {
           </div>
         </div>
       </div>
+{/* Asistan Butonu (Sol Alt) */}
+      <div className="fixed bottom-24 left-6 z-50 pointer-events-none">
+        <button
+          onClick={() => setIsAssistantOpen(true)}
+          className="pointer-events-auto flex items-center gap-3 px-5 py-4 rounded-full shadow-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs uppercase tracking-widest border-4 border-white transition-all active:scale-95"
+        >
+          <div className="relative flex items-center justify-center">
+            <div className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-30" />
+            <Brain size={22} className="relative z-10" />
+          </div>
+          {lang === 'tr' ? 'Asistan' : lang === 'ar' ? 'المساعد' : 'Assistant'}
+        </button>
+      </div>
 
+      {/* Asistan Modal */}
+      <AnimatePresence>
+        {isAssistantOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsAssistantOpen(false)}
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100]"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-lg bg-white rounded-[40px] shadow-2xl z-[101] overflow-hidden border border-gray-100 p-6 sm:p-8"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                    <Brain size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
+                      {lang === 'tr' ? 'Afet Asistanı' : lang === 'ar' ? 'مساعد الطوارئ' : 'Disaster Assistant'}
+                    </h3>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                      {lang === 'tr' ? 'Yapay Zeka Destekli' : 'AI Powered'}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setIsAssistantOpen(false)}
+                  className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-gray-100 transition-colors"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={aiQuestion}
+                  onChange={(e) => setAiQuestion(e.target.value)}
+                  onKeyDown={(e) => e.key === 'Enter' && handleAiSearch()}
+                  placeholder={t.aiPlaceholder}
+                  className="flex-1 p-4 rounded-2xl border border-gray-200 bg-gray-50 font-bold text-xs sm:text-sm outline-none focus:ring-2 focus:ring-emerald-500 text-gray-900"
+                />
+                <button
+                  onClick={handleAiSearch}
+                  disabled={aiLoading}
+                  className="px-6 py-4 bg-emerald-600 text-white font-black rounded-2xl text-xs uppercase shadow-md hover:bg-emerald-700 transition-all"
+                >
+                  {aiLoading ? '...' : (lang === 'tr' ? 'SOR' : lang === 'ar' ? 'اسأل' : 'ASK')}
+                </button>
+              </div>
+
+              {(aiLoading || aiAnswer) && (
+                <div className="mt-4 p-4 bg-gray-50 rounded-2xl border-l-4 border-emerald-600 max-h-[300px] overflow-y-auto">
+                  <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest block mb-1">
+                    {lang === 'tr' ? '💬 Yapay Zeka Yanıtı' : '💬 AI Response'}
+                  </span>
+                  <p className="text-xs sm:text-sm text-gray-800 font-medium leading-relaxed whitespace-pre-line">
+                    {aiLoading ? t.aiThinking : aiAnswer}
+                  </p>
+                </div>
+              )}
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {!activeModule && (
+        <div className="h-12" /> // Spacing for fab
+      )}
       {!activeModule && (
         <div className="h-12" /> // Spacing for fab
       )}
@@ -1826,7 +1949,7 @@ function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => vo
           );
         }
 
-        return (
+       return (
           <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {p.sections.map((section: any) => (
@@ -1848,7 +1971,7 @@ function ModuleView({ type, onBack, lang }: { type: ModuleType, onBack: () => vo
                     <ShieldCheck size={20} />
                   </div>
                   <div className="flex items-center justify-between w-full">
-                    <h4 className="font-bold text-lg mb-1">{section.title}</h4>
+                    <h4 className="font-bold text-lg mb-1 Tactics">{section.title}</h4>
                   </div>
                   <p className="text-sm text-gray-500">{section.desc}</p>
                 </button>
@@ -2516,16 +2639,16 @@ function NeedsDashboard({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
                 <p className="text-xs font-bold text-gray-400 mb-6 uppercase tracking-tighter">
                   {lang === 'tr' ? (
                     need.category === 'blood' ? 'Kan' :
-                    need.category === 'food' ? 'Gıda' :
-                      need.category === 'shelter' ? 'Barınma' :
-                        need.category === 'medical' ? 'Medikal' :
-                          need.category === 'children' ? 'Çocuk' : 'Hijyen'
+                      need.category === 'food' ? 'Gıda' :
+                        need.category === 'shelter' ? 'Barınma' :
+                          need.category === 'medical' ? 'Medikal' :
+                            need.category === 'children' ? 'Çocuk' : 'Hijyen'
                   ) : lang === 'ar' ? (
                     need.category === 'blood' ? 'الدم' :
-                    need.category === 'food' ? 'طعام' :
-                      need.category === 'shelter' ? 'مأوى' :
-                        need.category === 'medical' ? 'طبي' :
-                          need.category === 'children' ? 'أطفال' : 'نظافة'
+                      need.category === 'food' ? 'طعام' :
+                        need.category === 'shelter' ? 'مأوى' :
+                          need.category === 'medical' ? 'طبي' :
+                            need.category === 'children' ? 'أطفال' : 'نظافة'
                   ) : need.category}
                 </p>
 
@@ -2587,7 +2710,7 @@ function LogisticsNetwork({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
       to: toSearch.trim(),
       vehicle: lang === 'tr' ? 'Binek Araç / Özel' : 'Private Vehicle',
       departure: lang === 'tr' ? 'En Kısa Sürede' : 'As soon as possible',
-      capacity: 100, // Varsayılan tam kapasite
+      capacity: 100,
       contact: 'Sistem üzerinden eklendi'
     };
 
@@ -2698,32 +2821,6 @@ function LogisticsNetwork({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
   );
 }
 
-function StatCard({ label, value, color }: { label: string, value: string, color: string }) {
-  return (
-    <div className="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm">
-      <div className="text-xs font-bold text-gray-400 uppercase mb-1">{label}</div>
-      <div className={`text-3xl font-black ${color}`}>{value}</div>
-    </div>
-  );
-}
-
-function LogisticsItem({ category, status, amount }: { category: string, status: string, amount: string }) {
-  return (
-    <div className="p-4 flex items-center justify-between">
-      <div className="flex items-center gap-4">
-        <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400">
-          <Truck size={20} />
-        </div>
-        <div>
-          <div className="font-bold">{category}</div>
-          <div className="text-xs text-gray-400">{amount}</div>
-        </div>
-      </div>
-
-    </div>
-  );
-}
-
 function FireDetailView({ lang, onBack }: { lang: 'tr' | 'en' | 'ar', onBack: () => void }) {
   const t = translations[lang];
   const p = t.modules.preparation;
@@ -2822,7 +2919,6 @@ function FireDetailView({ lang, onBack }: { lang: 'tr' | 'en' | 'ar', onBack: ()
                   key={item.id}
                   onClick={() => {
                     setSubSection(item.id);
-                    if (item.id === 'simulation') resetSim();
                   }}
                   className="flex flex-col p-5 sm:p-6 bg-gray-50 rounded-[24px] sm:rounded-3xl border border-transparent hover:border-gray-200 hover:bg-gray-100/50 transition-all text-left group"
                 >
@@ -3113,5 +3209,3 @@ function FAQModule({ lang }: { lang: 'tr' | 'en' | 'ar' }) {
     </div>
   );
 }
-
-
